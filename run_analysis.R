@@ -1,5 +1,4 @@
-##IMPORTANT: Before running, set working directory to parent directory of 
-## "UCI HAR Dataset', and make sure dplyr packacge is installed
+##IMPORTANT: Before running, set working directory to parent directory of "UCI HAR Dataset', and make sure dplyr packacge is installed
 
 library(dplyr)
 
