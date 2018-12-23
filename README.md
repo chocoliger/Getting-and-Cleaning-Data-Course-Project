@@ -11,6 +11,7 @@ The R script requires you to set the working directory as the parent directory o
 The output of the script will be two dataframes. The first dataframe will contain a tidyset with measurements that involve mean or standard deviations, called "hozCollapsedData". The second dataframe will contain a summarised version of the "hozCollapsedData" dataset, with the average of each variable for each activity and each subject.
 
 The 'pseudocode' for the script is as follows:
+
 **SCRIPT STEPS**
 1. COLLATE
   - read text files and convert to dataframe
