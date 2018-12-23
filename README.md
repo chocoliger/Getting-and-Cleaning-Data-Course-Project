@@ -6,6 +6,6 @@ Included in this repository is the following:
 * ReadMe document you are reading currently
 * CodeBook describing the variables of the output of the script
 
-The R script requires you to set the working directory as the parent directory of the extracted UCI HAR Dataset folder. It also requires that the 'dplyr' package to be installed beforehand. Do not change the position or names of any of the files in the UCI HAR Dataset folder. 
+The R script requires you to set the working directory as the parent directory of the extracted UCI HAR Dataset folder. It also requires that the 'dplyr' package to be installed beforehand. Do not change the position or names of any of the files in the UCI HAR Dataset folder. To use the script, simply run the R script, and call the run_analysis() function and the output should appear in the working directory.
 
 The output of the script will be one tidy dataset called "tidydataUCI_HAR.txt". The dataset will be a txt file containing a summarised version of the entire collated dataset, with the average of each variable for each activity and each subject.
