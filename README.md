@@ -11,17 +11,17 @@ The R script requires you to set the working directory as the parent directory o
 The output of the script will be two dataframes. The first dataframe will contain a tidyset with measurements that involve mean or standard deviations, called "hozCollapsedData". The second dataframe will contain a summarised version of the "hozCollapsedData" dataset, with the average of each variable for each activity and each subject.
 
 The 'pseudocode' for the script is as follows:
-  SCRIPT STEPS
-    1. COLLATE
-	    a. read text files and convert to dataframe
-	    b. rbind and cbind separate dataframes into appropriate orientation
-		      i. subject_train and y_train are own columns
-		      ii. make column names of columns 3: to be features.txt
-	    c. tidy up names
-		      i. convert activity numbers into descriptive labels
-    2. COLLAPSE_HORIZONTAL(MEANS/SD)
-	    a. find column names with "mean" or "std" and convert to num/log vector
-	    b. select dataframe for these columns
-	    c. tidy remaining feature names with readable labels
-    3. COLLAPSE_VERTICAL(MEANS FOR EACH ACTIVITY)
-	    a. apply mean for each activity for each person and collapse into one
+**SCRIPT STEPS**
+1. COLLATE
+  - read text files and convert to dataframe
+  - rbind and cbind separate dataframes into appropriate orientation
+    - subject_train and y_train are own columns
+    - make column names of columns 3: to be features.txt
+  - tidy up names
+    - convert activity numbers into descriptive labels
+2. COLLAPSE_HORIZONTAL(MEANS/SD)
+  - find column names with "mean" or "std" and convert to num/log vector
+  - select dataframe for these columns
+  - tidy remaining feature names with readable labels
+3. COLLAPSE_VERTICAL(MEANS FOR EACH ACTIVITY)
+  - apply mean for each activity for each person and collapse into one
