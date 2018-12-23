@@ -50,8 +50,7 @@ run_analysis<-function(){
                                      FUN=mean)
         vertCollapsedData<-arrange(vertCollapsedData,SubjectID,Activity)
         
-        ##Step 7: Move dataframes into global environment
-        hozCollapsedData<<-hozCollapsedData
-        vertCollapsedData<<-vertCollapsedData
+        ##Step 7: Output tidydata set as txt file
+        write.table(vertCollapsedData, file="tidydataUCI_HAR.txt", row.name=FALSE)     
         print("All phases complete!")
 }
